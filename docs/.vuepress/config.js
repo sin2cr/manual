@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Sin',
-  description: '学习笔记',
+  title: '',
+  description: '',
   base: '/Manual/',
   head: [
     [
@@ -21,32 +21,18 @@ module.exports = {
     //顶部导航
     nav: [
       { text: 'Home', link: '/' },
-
-      { text: 'Guide', link: '/guide/' },
-      { text: 'java', link: '/MD/java' },
-      /* {
-        text: 'Languages',
-        items: [
-          { text: 'Chinese', link: '/language/chinese' },
-          { text: 'English', link: '/language/english' }
-        ]
-      }, */
+      { text: '导航', link: '/guide/' },
+      { text: 'java', link: '/MD/java/' },
       { text: 'Github', link: 'https://github.com/sin2cr' },
 
     ],
 
-    // sidebarDepth: 2,
     //侧边栏
-    sidebar: [
-      {
-        title: '导航栏',
-      },
-      {
-        title: 'java',
-        collapsable: false,
-        children: ['/MD/java']
-      },
-    ],
+    sidebarDepth: 2,
+    sidebar: 'auto',
+    // sidebar: [
+
+    // ],
   },
 
   plugins: [
@@ -56,19 +42,19 @@ module.exports = {
       headerAnchorSelector: '.header-anchor'
     },
     '@vuepress/back-to-top',
-    '@vuepress/blog',
-    {
-      directories: [
-        {
-          // 当前分类的唯一 ID
-          id: 'post',
-          // 目标文件夹
-          dirname: '_posts',
-          // `entry page` (或者 `list page`) 的路径
-          path: '/',
-        },
-      ],
-    },
+    // '@vuepress/blog',
+    // {
+    //   directories: [
+    //     {
+    //       // 当前分类的唯一 ID
+    //       id: 'post',
+    //       // 目标文件夹
+    //       dirname: '_posts',
+    //       // `entry page` (或者 `list page`) 的路径
+    //       path: '/',
+    //     },
+    //   ],
+    // },
     '@vuepress/nprogress',
 
   ]
