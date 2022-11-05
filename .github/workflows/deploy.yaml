@@ -6,11 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      
-      - name: Install and Build
-        run: |
-          yarn install
-          yarn run build
+        
       - name: vuepress-deploy
         uses: sin2cr/manual@main
         env:
