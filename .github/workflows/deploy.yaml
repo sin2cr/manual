@@ -22,11 +22,11 @@ permissions:
       steps:
         - name: Checkout
           uses: actions/checkout@main
-          
+
         - name: vuepress-deploy
           uses: sin2cr/manual@main
           env:
-            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            ACCESS_TOKEN: ${{ secrets.DEPLOY}}
             TARGET_REPO: sin2cr/manual
             TARGET_BRANCH: deploy_pages
             BUILD_SCRIPT: yarn && yarn build
