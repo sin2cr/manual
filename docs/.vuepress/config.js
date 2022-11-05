@@ -1,6 +1,6 @@
 module.exports = {
-  title: '',
-  description: '',
+  title: 'Sin',
+  description: '一份自由的记录型手册',
   base: '/Manual/',
   head: [
     [
@@ -22,8 +22,8 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: '导航', link: '/guide/' },
-      { text: 'java', link: '/MD/java/' },
-      { text: 'Github', link: 'https://github.com/sin2cr' },
+      // { text: 'java', link: '/MD/java/' },
+      { text: 'Github主页', link: 'https://github.com/sin2cr'},
 
     ],
 
