@@ -7,11 +7,27 @@ jobs:
       # - name: Checkout
       #   uses: actions/checkout@main
 
-      - name: vuepress-deploy
+      # - name: vuepress-deploy
+      #   uses: sin2cr/manual@main
+      #   env:
+      #     ACCESS_TOKEN: ${{ secrets.DEPLOY}}
+      #     TARGET_REPO: sin2cr/manual
+      #     TARGET_BRANCH: deploy_pages
+      #     BUILD_SCRIPT: yarn && yarn build
+      #     BUILD_DIR: docs/.vuepress/dist
+       - name: Checkout
+        uses: actions/checkout@v2 
+        with:
+          persist-credentials: false
+
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn run build
+      - name: Deploy
         uses: sin2cr/manual@main
-        env:
-          ACCESS_TOKEN: ${{ secrets.DEPLOY}}
-          TARGET_REPO: sin2cr/manual
-          TARGET_BRANCH: deploy_pages
-          BUILD_SCRIPT: yarn && yarn build
-          BUILD_DIR: docs/.vuepress/dist
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY }}
+          BRANCH: deploy_pages 
+          FOLDER: docs/.vuepress/dist 
+          BUILD_SCRIPT: npm install && npm run build  # && cd docs/.vuepress/dist && echo 'sin2cr.com' > CNAME && cd -
