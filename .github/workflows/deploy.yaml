@@ -15,11 +15,10 @@ jobs:
       #     TARGET_BRANCH: deploy_pages
       #     BUILD_SCRIPT: yarn && yarn build
       #     BUILD_DIR: docs/.vuepress/dist
-       - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2 
         with:
           persist-credentials: false
-
       - name: Install and Build
         run: |
           yarn install
