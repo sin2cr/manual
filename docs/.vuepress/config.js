@@ -1,7 +1,8 @@
 module.exports = {
   title: 'Sin',
   description: '一份自由的记录型手册',
-  base: '/manual/',
+  // base: '/manual/', 使用github page时使用
+  base: '', //现改用Netlify
   head: [
     [
       'link', { rel: 'icon', href: 'https://cdn.staticaly.com/gh/beichen2020/imgList@main/img/headshot.4p2gxh54vda0.png' }
