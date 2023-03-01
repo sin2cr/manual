@@ -8,12 +8,12 @@
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/plugin-blog": "^1.9.4",
     "@vuepress/plugin-nprogress": "^1.9.7",
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "vuepress-theme-vdoing": "^1.12.8"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build docs"
   },
   "main": "index.js",
   "license": "MIT"
