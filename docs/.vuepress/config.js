@@ -30,7 +30,9 @@ module.exports = {
       { text: '导航',
         link: '/',
         items: [
-          {text:'编程语言',link:'/lang/'}
+          {text:'编程语言',link:'/lang/'},
+          {text: '408计算机专业基础', link: '/408/'},
+
         ]
       },
       {
@@ -92,7 +94,7 @@ module.exports = {
     },
     //博客信息收集模块
     blogInfo: {
-      blogCreate: '2021-10-19', // 博客创建时间
+      blogCreate: '2022-11-4', // 博客创建时间
       indexView: true,  // 开启首页的访问量和排名统计，默认 true（开启）
       pageView: true,  // 开启文章页的浏览量统计，默认 true（开启）
       readingTime: true,  // 开启文章页的预计阅读时间，条件：开启 eachFileWords，默认 true（开启）。可在 eachFileWords 的 readEachFileWords 的第二个和第三个参数自定义，默认 1 分钟 300 中文、160 英文
