@@ -31,7 +31,7 @@ module.exports = {
         link: '/',
         items: [
           {text:'编程语言',link:'/lang/'},
-          {text: '408计算机专业基础', link: '/408/'},
+          {text: '计算机基础', link: '/408/'},
           {text: '编程以外相关技术', link: '/devothers/'},
 
         ]
