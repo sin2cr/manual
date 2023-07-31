@@ -55,7 +55,7 @@ module.exports = {
     
     //侧边栏
     sidebar: 'structuring',
-    // sidebarDepth: 2,
+    sidebarDepth: 3,
     // sidebar: 'auto',
     // sidebar: [
 
