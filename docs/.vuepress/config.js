@@ -31,6 +31,7 @@ module.exports = {
         link: '/',
         items: [
           {text:'编程语言',link:'/lang/'},
+          {text:'框架',link:'/framework/'},
           {text: '计算机基础', link: '/408/'},
           {text: '编程以外相关技术', link: '/devothers/'},
 
@@ -55,7 +56,7 @@ module.exports = {
     
     //侧边栏
     sidebar: 'structuring',
-    sidebarDepth: 3,
+    sidebarDepth: 2,
     // sidebar: 'auto',
     // sidebar: [
 
