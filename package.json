@@ -1,7 +1,7 @@
 {
   "name": "growthManual",
-  "author": "Sin",
-  "version": "1.0.0",
+  "author": "Sine2cr",
+  "version": "1.1.0.release",
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "@vuepress/plugin-active-header-links": "^1.9.7",
