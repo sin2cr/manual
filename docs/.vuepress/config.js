@@ -69,6 +69,7 @@ module.exports = {
                 ],
             },
             {text: '关于', link: '/about/'},
+            {text: '语雀知识库',link:'https://www.yuque.com/sine2cr/backend-java'},
             {text: 'Github主页', link: 'https://github.com/sine2cr'},
 
         ],
